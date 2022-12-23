@@ -19,6 +19,7 @@ import { BsExclamationDiamond } from 'react-icons/bs';
 import { BiHeading } from 'react-icons/bi';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [title, setTitle] = useState('Preview');
@@ -169,6 +170,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Link href='/loading' className='bg-fuchsia-400 px-4 py-2 rounded-md'>
+        Loading
+      </Link>
     </div>
   );
 }
